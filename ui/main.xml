@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="30dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="小派精灵布局示例代码"/>
+
+        <EditText
+                android:id="@+id/login_account_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号"
+                android:minHeight="48dp" />
+        <EditText
+                android:id="@+id/login_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal" >
+            <CheckBox
+                    android:id="@+id/platform_android"
+                    android:text="Android"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <CheckBox
+                    android:id="@+id/platform_ios"
+                    android:text="iOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <CheckBox
+                    android:id="@+id/platform_pc"
+                    android:text="PC"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RadioGroup
+                android:id="@+id/language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            <RadioButton
+                    android:id="@+id/language_python"
+                    android:text="python"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <RadioButton
+                    android:id="@+id/language_python_pc"
+                    android:text="Python_PC自动化"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <RadioButton
+                    android:id="@+id/language_python_phone"
+                    android:text="Python_PC手机自动化"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </RadioGroup>
+        <ToggleButton
+                android:id="@+id/toggle_button"
+                android:hint="一个开关"
+                android:textOn="关闭"
+                android:textOff="打开"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <Switch
+                android:id="@+id/toogle_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="滑动开关"
+                android:textOff="打开"
+                android:textOn="关闭" />
+    </LinearLayout>
+</FrameLayout>
